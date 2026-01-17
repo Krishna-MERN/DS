@@ -6,10 +6,10 @@ export default function Facts() {
   const [start, setStart] = useState(false)
 
   const stats = [
-    { label: "Projects Completed", value: 120 },
-    { label: "Happy Clients", value: 85 },
-    { label: "Skilled Experts", value: 20 },
-    { label: "Years of Experience", value: 5 }
+    { label: "Projects Completed", value: 56 },
+    { label: "Happy Clients", value: 42 },
+    { label: "Skilled Experts", value: 18 },
+    { label: "Years of Experience", value: 4 }
   ]
 
   // Detect when section is visible
