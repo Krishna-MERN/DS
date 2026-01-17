@@ -45,7 +45,7 @@ export default function Navbar() {
             ref={serviceRef}
             onMouseEnter={() => setServiceOpen(true)}
           >
-            <span className="dropdown-title">Services</span>
+            <Link to="/services"><span className="dropdown-title">Services</span></Link>
 
             <div className={`dropdown-menu ${serviceOpen ? "show" : ""}`}>
               <Link to="/services">Website Development</Link>

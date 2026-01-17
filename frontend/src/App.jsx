@@ -13,7 +13,7 @@ import Career from "./pages/Career"
 // import Contact from "./pages/Contact"
 
 /* Optional */
-// import NotFound from "./pages/NotFound"
+import NotFound from "./pages/NotFound"
 
 export default function App() {
   return (
@@ -29,7 +29,7 @@ export default function App() {
         {/* <Route path="/contact" element={<Contact />} /> */}
 
         {/* 404 fallback */}
-        {/* <Route path="*" element={<NotFound />} /> */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       <Footer />

@@ -155,7 +155,7 @@
   position: absolute;
   top: 42px;
   left: 0;
-  background: var(--bg-main);
+  background: black;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-soft);
   min-width: 220px;
