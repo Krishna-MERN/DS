@@ -1,0 +1,140 @@
+.about-page {
+  background: #0b1c2d;
+  color: #fff;
+}
+
+/* HERO */
+.about-hero {
+  padding: 100px 8% 120px;
+  text-align: center;
+
+  background: linear-gradient(to bottom, #0b1c2d, #000);
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+/* Sections */
+.about-section {
+  padding: 100px 8%;
+}
+
+.about-section.light {
+  background: #fff;
+  color: #111;
+}
+
+.about-section.dark {
+  background: #0b1c2d;
+  color: #fff;
+}
+
+.center-text {
+  max-width: 720px;
+  margin: 20px auto 60px;
+  text-align: center;
+}
+
+/* Grid */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+/* Legacy */
+.legacy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.legacy-card {
+  padding: 30px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 14px;
+  transition: 0.3s;
+}
+
+.legacy-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Expertise */
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.expertise-card {
+  padding: 24px;
+  border-radius: 14px;
+  background: #bcd0e4;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Trust */
+.trust {
+  background: #d9e3f7;
+  color: #111;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* Team */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.team-card {
+  text-align: center;
+}
+
+.team-card img {
+  width: 100%;
+  border-radius: 14px;
+  margin-bottom: 16px;
+}
+
+/* CTA */
+.about-cta {
+  padding: 100px 8%;
+  text-align: center;
+  background: #133c65;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 36px;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 30px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-grid,
+  .legacy-grid,
+  .expertise-grid,
+  .trust-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}

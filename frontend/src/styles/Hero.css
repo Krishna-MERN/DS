@@ -1,0 +1,147 @@
+
+@import "./variables.css";
+@import "./global.css";
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background: url("/public/herobg.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  box-shadow: 30px 0px 30px ;
+  padding: 0 6%;
+  overflow: hidden;
+}
+
+/* Dark overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(2, 6, 23, 0.95),
+    rgba(10, 37, 64, 0.637)
+  );
+  z-index: 1;
+}
+
+/* Content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+  animation: fadeUp 1.2s ease forwards;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--text-light);
+  line-height: 1.2;
+}
+
+.hero-title span {
+  color: var(--accent-blue);
+}
+
+.hero-subtitle {
+  margin-top: 22px;
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  max-width: 650px;
+  line-height: 1.8;
+}
+
+/* Buttons */
+.hero-actions {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+.btn-primary {
+  background: var(--accent-blue);
+  color: white;
+  padding: 14px 34px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  border: 1px solid var(--border-light);
+  color: var(--text-light);
+  padding: 14px 34px;
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Glow animation */
+.hero-glow {
+  position: absolute;
+  right: -150px;
+  top: 50%;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(
+    circle,
+    rgba(37, 99, 235, 0.35),
+    transparent 70%
+  );
+  transform: translateY(-50%);
+  animation: pulse 6s infinite ease-in-out;
+  z-index: 1;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.4;
+    transform: translateY(-50%) scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateY(-50%) scale(1.08);
+  }
+  100% {
+    opacity: 0.4;
+    transform: translateY(-50%) scale(1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero {
+    padding: 0 8%;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+}

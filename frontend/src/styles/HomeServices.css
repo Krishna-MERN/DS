@@ -1,0 +1,128 @@
+/* SECTION */
+.split-services {
+  padding: 120px 6%;
+  background: #f8fafc; /* light background */
+  color: #0f172a;
+}
+
+/* CONTAINER */
+.split-services-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px;
+  align-items: center;
+}
+
+/* LEFT IMAGE */
+.split-services-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.split-services-image img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 24px;
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.15);
+  animation: float 5s ease-in-out infinite;
+}
+
+/* RIGHT CONTENT */
+.split-services-content h2 {
+  font-size: 2.6rem;
+  margin-bottom: 18px;
+  color: #0b1c2d;
+}
+
+.subtitle {
+  color: #475569;
+  line-height: 1.7;
+  margin-bottom: 48px;
+  max-width: 520px;
+}
+
+/* SERVICE LIST */
+.service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* SERVICE ITEM */
+.service-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 18px 22px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+  transition: all 0.35s ease;
+}
+
+.service-item:hover {
+  transform: translateX(10px);
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+}
+
+/* NUMBER */
+.service-item span {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2563eb;
+  min-width: 42px;
+}
+
+/* TEXT */
+.service-item h4 {
+  margin-bottom: 6px;
+  color: #0b1c2d;
+}
+
+.service-item p {
+  color: #475569;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* FLOAT ANIMATION */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .split-services-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .service-item {
+    justify-content: center;
+    text-align: left;
+  }
+
+  .split-services-image img {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .split-services-content h2 {
+    font-size: 2.2rem;
+  }
+}

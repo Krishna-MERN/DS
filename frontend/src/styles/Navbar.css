@@ -1,0 +1,169 @@
+@import "./variables.css";
+@import "./global.css";
+
+
+
+.navbar {
+  width: 100%;
+  background: var(--primary-dark);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.navbar-logo img {
+  height: 42px;
+}
+
+/* Menu */
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navbar-menu a,
+.dropdown-title {
+  color: var(--text-light);
+  font-weight: 500;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.navbar-menu a:hover,
+.dropdown-title:hover {
+  color: var(--accent-blue);
+}
+
+/* Contact Button */
+.nav-btn {
+  background: var(--accent-blue);
+  padding: 10px 22px;
+  border-radius: var(--radius-md);
+  color: white;
+}
+
+.nav-btn:hover {
+  background: #1d4ed8;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  background: var(--bg-main);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  min-width: 220px;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.dropdown-menu a {
+  padding: 14px 18px;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+}
+
+.dropdown-menu a:hover {
+  background: var(--bg-section);
+}
+
+.dropdown-menu.show {
+  display: flex;
+}
+
+/* Mobile Toggle */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 26px;
+  height: 3px;
+  background: white;
+  margin: 4px 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .navbar-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: var(--primary-black);
+    flex-direction: column;
+    padding: 30px 0;
+    gap: 20px;
+    display: none;
+  }
+
+  .navbar-menu.open {
+    display: flex;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .dropdown-menu a {
+    color: var(--text-light);
+    padding-left: 30px;
+  }
+}
+.dropdown {
+  position: relative;
+}
+
+/* Button reset */
+.dropdown-title {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Ensure dropdown area is clickable */
+.dropdown-menu {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  background: var(--bg-main);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  min-width: 220px;
+  display: none;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.dropdown-menu.show {
+  display: flex;
+}

@@ -1,0 +1,30 @@
+:root {
+  /* Brand Colors */
+  --primary-dark: #0a2540;   /* Dark Blue */
+  --primary-black: #020617; /* Near Black */
+  --primary-white: #ffffff;
+
+  /* Accent */
+  --accent-blue: #2563eb;
+
+  /* Text */
+  --text-dark: #0f172a;
+  --text-light: #f8fafc;
+  --text-muted: #94a3b8;
+
+  /* Backgrounds */
+  --bg-main: #ffffff;
+  --bg-dark: #020617;
+  --bg-section: #f1f5f9;
+
+  /* UI */
+  --border-light: #e5e7eb;
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.12);
+
+  /* Radius */
+  --radius-md: 12px;
+  --radius-lg: 18px;
+
+  /* Transition */
+  --transition: all 0.3s ease;
+}

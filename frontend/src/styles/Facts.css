@@ -1,0 +1,56 @@
+.facts {
+  padding: 120px 6%;
+  background: #e8f2fd; /* light background */
+  color: #0f172a;
+}
+
+.facts-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+/* CARD */
+.fact-card {
+  background: #ffffff;
+  padding: 48px 20px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+  transition: all 0.35s ease;
+}
+
+.fact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+}
+
+/* NUMBER */
+.fact-card h2 {
+  font-size: 3rem;
+  margin-bottom: 12px;
+  color: #2563eb; /* primary blue */
+}
+
+/* LABEL */
+.fact-card p {
+  font-size: 1rem;
+  color: #475569;
+  font-weight: 500;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+  .facts-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .facts-container {
+    grid-template-columns: 1fr;
+  }
+}
