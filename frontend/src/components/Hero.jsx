@@ -1,4 +1,5 @@
-import "../styles/Hero.css"
+import { Link } from "react-router-dom";
+import "../styles/Hero.css";
 
 export default function Hero() {
   return (
@@ -13,25 +14,28 @@ export default function Hero() {
 
         <p className="hero-subtitle">
           Datara Softwares is a professional software development agency
-          delivering modern websites and scalable applications for
-          businesses that value quality, performance, and long-term success.
+          delivering modern websites and scalable applications for businesses
+          that value quality, performance, and long-term success.
         </p>
 
         <div className="hero-actions">
-          <a href="https://wa.me/917985687221"
-  target="_blank"
-  rel="noopener noreferrer"
-   className="btn-primary">
+          <a
+            href="https://wa.me/917985687221"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary"
+          >
             Get Free Consultation
           </a>
-          <a href="/projects" className="btn-secondary">
-            View Our Work
-          </a>
+          <Link to="/projects"  className="btn-secondary">  View Our Work</Link>
+         
+          
+          
         </div>
       </div>
 
       {/* Decorative animated element */}
       <div className="hero-glow" />
     </section>
-  )
+  );
 }
