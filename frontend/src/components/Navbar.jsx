@@ -57,7 +57,7 @@ export default function Navbar() {
 
           <Link to="/projects">Projects</Link>
           <Link to="/career">Career</Link>
-          <Link to="https://wa.me/918090901115"
+          <Link to="https://wa.me/917985687221"
   target="_blank"
   rel="noopener noreferrer"
   className="nav-btn">Contact Us</Link>

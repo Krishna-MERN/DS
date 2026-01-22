@@ -40,7 +40,7 @@ export default function Footer() {
           <h4>Contact</h4>
           <p>📍 Uttar Pradesh, India</p>
           <a
-  href="https://wa.me/918090901115"
+  href="https://wa.me/917985687221"
   target="_blank"
   rel="noopener noreferrer"
   className="whatsapp-btn"
