@@ -18,7 +18,10 @@ export default function Hero() {
         </p>
 
         <div className="hero-actions">
-          <a href="/contact" className="btn-primary">
+          <a href="https://wa.me/917985687221"
+  target="_blank"
+  rel="noopener noreferrer"
+   className="btn-primary">
             Get Free Consultation
           </a>
           <a href="/projects" className="btn-secondary">

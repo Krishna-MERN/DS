@@ -39,7 +39,16 @@ export default function Footer() {
         <div className="footer-contact">
           <h4>Contact</h4>
           <p>📍 Uttar Pradesh, India</p>
-          <p>📞 +91 79856 87221</p>
+          <a
+  href="https://wa.me/918090901115"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="whatsapp-btn"
+>
+  <p>📞 +91 79856 87221</p>
+</a>
+
+          
           <p>✉ Support@ds.com</p>
 
           <div className="footer-socials">
